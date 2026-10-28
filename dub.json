@@ -1,0 +1,21 @@
+{
+	"name": "takeoffmetric",
+	"description": "Read-only lookup of the TakeoffMetric US construction estimating constants (dataset 1.2.0): 148 records with unit, SI conversion, condition and source; 55 values withheld at their publishers' request. Computes nothing.",
+	"homepage": "https://takeoffmetric.com/",
+	"license": "MIT",
+	"authors": ["TakeoffMetric Editorial"],
+	"copyright": "Copyright (c) 2026 TakeoffMetric",
+	"targetType": "library",
+	"stringImportPaths": ["data"],
+	"configurations": [
+		{
+			"name": "library"
+		},
+		{
+			"name": "unittest",
+			"sourcePaths": ["source", "tests"],
+			"importPaths": ["source", "tests"],
+			"stringImportPaths": ["data", "tests"]
+		}
+	]
+}
